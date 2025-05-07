@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
 import DisplayText from "./Components/DisplayText"; 
 import ClassDisplayText from "./Components/ClassDisplayText";
 import Counter from "./Components/Counter"; 
@@ -15,26 +14,13 @@ function App()
 {
   return (
     <div>
-      <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
 
     <div className="container">
       <h1>Welcome to React with CSS</h1>
       <button id="b1">Click Me</button>
     </div>
+
+    <hr></hr>
 
     <h1>React Functional Component Example</h1>
     <DisplayText/>
@@ -59,17 +45,16 @@ function App()
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/about">About</Link></li>
+            <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
 
-          {/* Define Routes */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/courses" element={<Courses />} />
           <Route path="/about" element={<About />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
