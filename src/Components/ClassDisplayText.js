@@ -1,8 +1,7 @@
 import React, { Component } from "react"; 
 
-class ClassDisplayText extends Component
-{ render()
-    {
+class ClassDisplayText extends Component {
+    render() {
         return (
             <div>
                 <h2>Welcome to React!</h2>

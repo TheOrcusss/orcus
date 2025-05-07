@@ -1,6 +1,6 @@
 import React from "react";
-const DisplayText = () => 
-    { 
+
+const DisplayText = () => { 
     return (
         <div>
             <h2>Welcome to React!</h2>

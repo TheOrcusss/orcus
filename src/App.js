@@ -1,17 +1,21 @@
 import './App.css';
 import React from 'react';
+
 import DisplayText from "./Components/DisplayText"; 
+
 import ClassDisplayText from "./Components/ClassDisplayText";
+
 import Counter from "./Components/Counter"; 
+
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"; 
+
 import Home from "./Components/Home";
 import Courses from "./Components/Courses";
 import About from "./Components/About"; 
 import Contact from "./Components/Contact";
 
 
-function App() 
-{
+function App() {
   return (
     <div>
 
